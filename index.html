@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Mind Innovations</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #004494;
+            --accent-color: #66b0ff;
+            --light-bg: #f8f9fa;
+            --dark-text: #333;
+            --light-text: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            padding: 2rem 0;
+            color: white;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 120px;
+            margin-right: 20px;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        section.alternate {
+            background-color: var(--light-bg);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--secondary-color);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            width: 48%;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .service-card {
+                width: 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Using the logo you created -->
+                <img src="images/bright-mind-logo.png" alt="Bright Mind Innovations Logo">
+                <h1>Bright Mind Innovations</h1>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#defence">Defence Solutions</a></li>
+                <li><a href="#training">Training & Upskilling</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="home">
+        <div class="container">
+            <h2>Innovative Solutions for Complex Challenges</h2>
+            <p>Bright Mind Innovations is a leading Australian provider of advanced technological solutions and expertise for defence, national security, and corporate clients. We specialize in AI-driven threat detection, information security, and professional training services.</p>
+            <p>Our approach combines cutting-edge research with practical applications to deliver powerful, effective solutions tailored to each client's unique requirements.</p>
+        </div>
+    </section>
+    
+    <section id="defence" class="alternate">
+        <div class="container">
+            <h2>Defence & Information Protection</h2>
+            <p>We provide advanced technology solutions to protect critical information assets and enhance decision-making capabilities for defence and security operations.</p>
+            
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Threat Detection & Analysis</h3>
+                    <p>Advanced AI-driven systems to detect, characterize, and analyze potential threats across diverse environments and platforms. Our behavioral analysis technology identifies coordinated inauthentic behavior with industry-leading accuracy.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Strategic Information Analysis</h3>
+                    <p>Comprehensive solutions for monitoring and analyzing information environments to provide strategic-level understanding of complex situations. Our tools transform disparate data into actionable intelligence.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Information Security Systems</h3>
+                    <p>Custom development of secure information management solutions designed to protect sensitive data while enabling authorized access and collaboration across teams and organizations.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI & Machine Learning Solutions</h3>
+                    <p>State-of-the-art artificial intelligence and machine learning technologies tailored for defense and security applications, including pattern recognition, anomaly detection, and predictive analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="training">
+        <div class="container">
+            <h2>Training & Upskilling</h2>
+            <p>We deliver specialized training programs to help organizations build internal capabilities and expertise in critical technology domains.</p>
+            
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Technical Skills Development</h3>
+                    <p>Tailored training programs in advanced technologies including artificial intelligence, machine learning, data analytics, and cybersecurity. Our courses combine theoretical knowledge with hands-on practical experience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Organizational Capability Building</h3>
+                    <p>Comprehensive training solutions designed to enhance organizational capabilities in information management, threat assessment, and strategic planning. Programs can be customized to specific operational contexts.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Executive Briefings & Workshops</h3>
+                    <p>Specialized briefings and workshops for leadership teams on emerging technologies, threats, and strategic approaches to information security and management in complex environments.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certification Programs</h3>
+                    <p>Structured training pathways leading to recognized certifications in specialized areas of information security, AI implementation, and strategic information management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="alternate">
+        <div class="container">
+            <h2>About Bright Mind Innovations</h2>
+            <p>Bright Mind Innovations is an Australian company specializing in advanced technological solutions for defence, security, and corporate clients. Established with a mission to leverage cutting-edge research for practical applications, we have built a reputation for excellence in AI-driven systems and specialized training services.</p>
+            <p>Our team combines extensive experience in technology research, defense applications, and professional education to deliver innovative, effective solutions for complex challenges. We maintain partnerships with leading research institutions and technology providers to ensure our clients receive the most advanced capabilities available.</p>
+            <p>Bright Mind Innovations is committed to the highest standards of quality, security, and ethical conduct in all our operations.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We welcome inquiries about our services and capabilities. Please contact us to discuss how Bright Mind Innovations can support your organization's needs.</p>
+            
+            <div class="contact-info" style="margin-top: 30px;">
+                <p>
+                    <span style="display: inline-block; width: 25px;">📧</span>
+                    <a href="mailto:wxp1jbz30@mozmail.com" style="color: #0056b3; text-decoration: underline;">Contact us by email</a>
+                </p>
+                <p>
+                    <span style="display: inline-block; width: 25px;">🌐</span>
+                    Website: <a href="https://www.brightmindinnovations.com.au" style="color: #0056b3; text-decoration: underline;">www.brightmindinnovations.com.au</a>
+                </p>
+                <p>
+                    <span style="display: inline-block; width: 25px;">📍</span>
+                    Location: Sydney, Australia
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bright Mind Innovations. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
