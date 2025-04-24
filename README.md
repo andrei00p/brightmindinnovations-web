@@ -8,4 +8,4 @@ This repository contains the website for Bright Mind Innovations, a leading Aust
 
 ## Contact
 
-For inquiries, please contact: info@brightmindinnovations.com.au
+For inquiries, please contact: wxp1jbz30@mozmail.com
